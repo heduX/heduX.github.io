@@ -59,66 +59,6 @@ h2 {
   display: flex;
   flex-direction: column;
 }
-* {
-  padding: 0;
-  margin: 0;
-}
-body {
-  background-color: #000;
-}
-ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  line-height: 1.4;
-  color: #eee;
-}
-li {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  color: #eee;
-}
-.logo {
-  color: #eee;
-}
-h1 {
-  font-size: 1.5em;
-}
-
-.bgimg {
-  background: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Crew8_sunset_022624_DSC_3504_desktop_8eda4876a4.jpg)
-    no-repeat;
-  height: 75rem;
-  width: auto;
-}
-.nav {
-  display: flex;
-}
-.flex {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-}
-
-.align {
-  align-items: center;
-}
-h2 {
-  color: #ffff;
-  font-size: 1.5rem;
-}
-.p1 {
-  color: #ffff;
-  font-size: 1rem;
-  margin: 0.2rem;
-  padding: 0.5rem;
-  text-align: end;
-}
-.flex1 {
-  display: flex;
-  flex-direction: column;
-}
 .img1 {
   background: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Homepage_Starlink_SLC_40_Desktop_5b1e6b5dd0.jpg)
     no-repeat;
@@ -156,4 +96,41 @@ a:active {
 }
 .bgimg .img1 .img2 .img3 {
   width: 100%;
+}
+@media screen and (max-width: 960px) {
+  .logo {
+    color: #eee;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .bgimg {
+    background: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Crew8_sunset_022624_DSC_3504_desktop_8eda4876a4.jpg)
+      no-repeat;
+    height: 7rem;
+    width: auto;
+  }
+
+  .p1 {
+    text-align: center;
+  }
+  .img1 {
+    background: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Homepage_Starlink_SLC_40_Desktop_5b1e6b5dd0.jpg)
+      no-repeat;
+    height: 7rem;
+    width: 7rem;
+  }
+  .img2 {
+    background: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Merah_Putih_2_eastgrassh_IMG_9153_f311879c2a.jpg)
+      no-repeat;
+    height: 20rem;
+    width: auto;
+  }
+  .img3 {
+    background: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Flight_2_Web_Crop_fbebdf1cd4.jpg)
+      no-repeat;
+    height: 10rem;
+    width: auto;
+  }
 }
