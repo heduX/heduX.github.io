@@ -27,6 +27,7 @@ li {
   background: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Crew8_sunset_022624_DSC_3504_desktop_8eda4876a4.jpg)
     no-repeat;
   height: 75rem;
+  width: auto;
 }
 .nav {
   display: flex;
@@ -59,16 +60,19 @@ h2 {
   background: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Homepage_Starlink_SLC_40_Desktop_5b1e6b5dd0.jpg)
     no-repeat;
   height: 73rem;
+  width: auto;
 }
 .img2 {
   background: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Merah_Putih_2_eastgrassh_IMG_9153_f311879c2a.jpg)
     no-repeat;
   height: 73rem;
+  width: auto;
 }
 .img3 {
   background: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Flight_2_Web_Crop_fbebdf1cd4.jpg)
     no-repeat;
   height: 73rem;
+  width: auto;
 }
 .atop {
   text-align: center;
@@ -86,8 +90,4 @@ p a:hover {
 
 a:active {
   background-color: #eee;
-}
-img{
-    width: 100%;
-    width: 100%;
 }
