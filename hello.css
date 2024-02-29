@@ -22,8 +22,8 @@ li {
 .logo {
   color: #eee;
 }
-h1{
-  font-size:"1.5em";
+h1 {
+  font-size: 1.5em;
 }
 
 .bgimg {
@@ -93,4 +93,7 @@ p a:hover {
 
 a:active {
   background-color: #eee;
+}
+.bgimg .img1 .img2 .img3 {
+  width: 100%;
 }
