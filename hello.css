@@ -21,8 +21,10 @@ li {
   margin-right: 2rem;
   color: #eee;
 }
+
 .logo {
   color: #eee;
+  cursor: default;
 }
 
 .nav {
@@ -36,7 +38,10 @@ li {
   font-size: 1rem;
   margin: 0.2rem;
   padding: 0.5rem;
+  font-family: "思源黑体";
+  cursor: default;
 }
+
 /* 头部 */
 
 .flex {
@@ -84,33 +89,19 @@ li {
 }
 .atop {
   text-align: center;
-}
-.a {
-  color: #eee;
-  font-size: 2.4rem;
-}
-li a:hover {
-  color: #ccc;
-}
-p a:hover {
-  color: #eee;
+  cursor: default;
 }
 
-a:active {
-  background-color: #eee;
-}
 .bgimg .img1 .img2 .img3 {
   width: 100%;
 }
-
-.divdeo {
-  height: 1080px;
+li a:hover {
+  color: #feac5e;
+}
+.flex3 {
 }
 
 @media screen and (max-width: 600px) {
-  .p1 {
-    text-align: center;
-  }
   body {
   }
   .flex3 {
@@ -118,6 +109,7 @@ a:active {
   }
   h1 {
     font-size: 25px;
+    margin-left: 17px;
   }
   .nav {
     display: block;
