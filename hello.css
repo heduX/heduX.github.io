@@ -1,140 +1,534 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
 }
+
 body {
-  background-color: #000;
+  font-family: "微软雅黑";
 }
-h1 {
-  color: #eee;
+main {
+  background-color: #fff;
+}
+.main h2 {
+  margin-bottom: 12px;
+}
+a {
+  text-decoration: none;
 }
 ul {
   list-style: none;
 }
-a {
-  text-decoration: none;
-  line-height: 1.4;
-  color: #eee;
+.bgimg1 {
+  background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Flight_3_Website_Desktop_1_3c750106c9.jpg);
+  background-size: 100% 100%;
 }
-li {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  color: #eee;
+.bgimg2 {
+  background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/crew8_home_6909efcad5.png);
+  background-size: 100% 100%;
+}
+.bgimg3 {
+  background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Transporter_10_SW_Hill_Horiz_0735_Desktop_9cbadd3243.jpg);
+  background-size: 100% 100%;
+}
+.bgimg4 {
+  background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Star6_41_DSC_4451_desktop_d_6b65017a5f.jpg);
+  background-size: 100% 100%;
+}
+.bgimg5 {
+  background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Crew8_sunset_022624_DSC_3504_desktop_8eda4876a4.jpg);
+  background-size: 100% 100%;
 }
 
-.logo {
-  color: #eee;
-  cursor: default;
+/* 通用 */
+/* .omit {
+  width: 300px;
+  height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} */
+@-webkit-keyframes width-chin {
+  0%,
+  100% {
+    width: 320px;
+  }
+  50% {
+    width: 260px;
+  }
+}
+.ellipsis {
+  position: relative;
+  background: rgb(230, 230, 230);
+  width: 260px;
+  max-height: 108px; /* h*n */
+  line-height: 18px; /* h */
+  overflow: hidden;
+  -webkit-animation: width-change 8s ease infinite;
 }
 
-.nav {
+.container {
+  width: 75%;
+  padding: 0 px;
+  margin: auto;
+}
+.flex {
   display: flex;
 }
-.align {
+.bgblue {
+  background-color: #007aff;
+}
+.bgwhite {
+  background-color: #fff;
+}
+.bggrey {
+  background-color: #eaeaea;
+}
+.fontwhite {
+  color: #fff;
+}
+.text-center {
+  text-align: center;
+}
+.font-grey {
+  color: #666;
+}
+
+.shadow {
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+}
+.shadow2 {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+.b-border {
+  border-bottom: 1px solid #cdcdcd;
+}
+.r-border {
+  border-right: 1px solid #cdcdcd;
+}
+.row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+/* 导航 */
+.nav {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #6c48f2;
+}
+.nav .spacex {
   align-items: center;
 }
-.p1 {
-  color: #ffff;
-  font-size: 1rem;
-  margin: 0.2rem;
-  padding: 0.5rem;
-  font-family: "思源黑体";
-  cursor: default;
+.nav .spacex p {
+  padding-left: 11px;
+}
+.news-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.nav-list li {
+  font-size: 17px;
+  margin-left: 55px;
+  display: flex;
+  align-items: center;
+}
+.nav-list a {
+  color: #eee;
+}
+
+.nav .number {
+  display: flex;
+  align-items: center;
+}
+
+.number p {
+  font-size: 18px;
+  align-items: center;
+}
+.nav img {
+  border-radius: 100px;
 }
 
 /* 头部 */
 
-.flex {
-  display: flex;
+.header {
+  padding-bottom: 188px;
+  padding-top: 100px;
+}
+.header h1 {
+  font-size: 33px;
+  margin-bottom: 50px;
+}
+.header p {
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+.header-button {
+  margin-top: 11px;
+}
+.header a {
+  color: #6c48f2;
+  background-color: #eee;
+  padding: 5px;
+  border-radius: 88px;
+  font-size: 11px;
 }
 
-.flex1 {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
+/* 主体 */
+
+.main {
+  margin-top: 55px;
 }
-.bgimg {
-  background: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Crew8_sunset_022624_DSC_3504_desktop_8eda4876a4.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center;
+main h2 {
+  font-size: 25px;
+}
+main p {
+  font-size: 17px;
+}
+.main-list {
+  padding-bottom: 55px;
+  margin-top: 33px;
+}
+
+.box {
+  height: 300px;
+  width: 25%;
+  padding: 16px;
+  margin-top: 66px;
+  margin-right: 3px;
+  border: 1px solid #cdcdcd;
+}
+.box h3 {
+  padding: 20px;
+}
+
+.box > p {
+  margin-bottom: 22px;
+}
+.box .p1 {
+  margin-bottom: 8px;
+  margin-top: 33px;
+}
+
+/* 案例 */
+
+.case-header {
+  margin-top: 55px;
+}
+
+.case-pic {
+  width: 25%;
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+  background-color: #fff;
+}
+.case-pic img {
   width: 100%;
-  padding-bottom: 43.15%;
+  height: 250px;
+  object-fit: cover;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  border: 2px solid #eee;
 }
-.img1 {
-  background: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Merah_Putih_2_eastgrassh_IMG_9153_f311879c2a.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% auto;
-  width: 100%;
-  padding-bottom: 46.15%;
-}
-.img2 {
-  background: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Star6_40_desktop2_1b4543b140.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% auto;
-  width: 100%;
-  padding-bottom: 46.15%;
-}
-/*  */
-.img3 {
-  background: url(https://copyright.bdstatic.com/vcg/creative/3ff8b76322ba6dfacd21d3dda7f5e912.jpg@h_1280)
-    no-repeat;
-  background-repeat: no-repeat;
-  width: 100%;
-  background-size: 100% auto;
-  background-position: center;
-  padding-bottom: 46.15%;
-}
-.atop {
+.case p {
+  margin: 50px;
   text-align: center;
-  cursor: default;
 }
-
-.bgimg .img1 .img2 .img3 {
+.bgwhite h4 {
+  font-size: 33px;
+}
+.bgwhite h5 {
+  font-size: 22px;
+  color: #cdcdcd;
+  padding-bottom: 33px;
+}
+/* 更多案例 */
+.more-cases {
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+  padding: 33px;
+  margin-top: 2px;
+  text-align: center;
+  border: 1px #eee solid;
+  margin-bottom: 5px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.more-cases a {
+  color: black;
+}
+/* 背景图片栏 */
+.image {
+  background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Star6_41_DSC_4451_desktop_d_6b65017a5f.jpg);
+  background-size: 100% 100%;
   width: 100%;
+  background-repeat: no-repeat;
+
+  display: inline-block;
 }
-li a:hover {
-  color: #feac5e;
+.image-list {
+  display: flex;
+  justify-content: center;
 }
-.flex3 {
+.image h6 {
+  color: #eee;
+  font-size: 33px;
+  width: 11.33%;
+  display: flex;
+  justify-content: center;
+  padding: 66px;
+}
+.image h6 p {
+  font-size: 1px;
 }
 
+.image .item {
+  padding: 188px;
+}
+/* 卡片 */
+.card {
+  padding-top: 77px;
+}
+.card-item {
+  margin-bottom: 66px;
+  padding: 11px;
+}
+.card-item h6 {
+  font-size: 33px;
+  font-weight: bold;
+}
+.card-h6 {
+  align-items: center;
+  margin-right: 22px;
+}
+.card-item p {
+  color: #666;
+  padding-left: 2px;
+}
+.card-item a {
+  float: right;
+  color: #007aff;
+}
+
+/* 咨讯 */
+
+.news-header {
+}
+.news-title {
+  font-size: 22px;
+  font-weight: bold;
+  flex-direction: column;
+  padding-top: 22px;
+}
+
+#news {
+  color: #666;
+  font-size: 22px;
+}
+
+.news-list {
+}
+.news-item {
+  width: 33.33%;
+  margin: 2px;
+}
+.news-item img {
+  width: 100%;
+  height: 231px;
+  object-fit: cover;
+}
+.news-header p {
+  text-align: center;
+  margin-top: 11px;
+  padding-bottom: 11px;
+}
+.news-header a {
+  text-decoration: none;
+  color: #666;
+  background-color: #fff;
+  border: 1px solid #cdcdcd;
+  border-radius: 80px;
+  font-weight: bold;
+  padding: 5px;
+}
+.news-block {
+  padding: 33px;
+  display: block;
+  text-align: center;
+}
+.news-header strong {
+  display: block;
+  text-align: center;
+}
+
+/* 服务区 */
+.service {
+  margin-top: 88px;
+  margin-bottom: 55px;
+}
+.service h1 {
+  font-size: 33px;
+  font-weight: bold;
+}
+.service h2 {
+  font-size: 33px;
+}
+.service span {
+  display: block;
+  margin-top: 5px;
+}
+.service p {
+  margin-bottom: 8px;
+  color: #666;
+  font-size: 17px;
+}
+.service a {
+  float: right;
+  color: #fff;
+  background-color: #2879fe;
+  text-decoration: none;
+  margin-top: px;
+  margin-bottom: 8px;
+  padding: 11px;
+  padding-right: 33px;
+  padding-left: 33px;
+  border-radius: 80px;
+}
+/* 蓝色区 */
+.blue-item {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  justify-content: space-around;
+}
+/* 商标区 */
+.logo-header {
+  margin-top: 55px;
+  margin-bottom: 99px;
+}
+
+.logo {
+  margin-bottom: 180px;
+}
+.logo img {
+  border: #eaeaea 0.5px solid;
+}
+.flex-circle {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 110px;
+  padding-left: 110px;
+}
+.circle {
+  color: #cfcfcf;
+  height: 30px;
+  width: 30px;
+  padding: 8px;
+  border-radius: 50px;
+  border: 1px solid #cfcfcf;
+  font-size: 33px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.line {
+  justify-content: center;
+  align-items: center;
+}
+.line-list {
+  padding-left: 11px;
+  padding-right: 11px;
+  color: #cfcfcf;
+}
+/* 黑色区 */
+.black {
+  background-color: #000;
+
+  padding-top: 66px;
+}
+
+.container-black h1 {
+  color: #666;
+  font-size: 17px;
+}
+
+.black-link a {
+  font-weight: normal;
+}
+.black ul {
+  margin-top: 20px;
+  display: flex;
+}
+.black li {
+  margin-right: 55px;
+  font-size: 22px;
+}
+.black li a {
+  color: #fff;
+}
+.black a {
+  font-size: 11px;
+  color: #666;
+}
+/* 备案 */
+.black p {
+  color: #666;
+  font-size: 11px;
+  margin-top: 11px;
+  padding-bottom: 11px;
+}
+/* 二维码 */
+/* .flex-qrcode {
+  justify-content: flex-end;
+  display: flex;
+  position: relative;
+  top: -88px;
+}
+.flex-qrcode img {
+  border: 5px solid #171717;
+  margin-right: 17px;
+  background-color: #171717;
+} */
+/* 伪类 */
+
+.more-cases a:hover {
+  color: #4bc0c8;
+}
+
+.header a:hover {
+  color: #fff;
+}
+.news-header a:hover {
+  background-color: #6c48f2;
+  color: #fff;
+}
+
+.bgblue:hover {
+  background-color: #6c48f2;
+  color: #007aff;
+}
+.service a:hover {
+  color: violet;
+}
+.header a:hover {
+  background-color: #6c48f2;
+}
+.box:hover {
+  background-color: #6c48f2;
+
+  color: #fff;
+}
+.case-pic:hover {
+  background-color: #6c48f2;
+}
+/* 手机 */
 @media screen and (max-width: 600px) {
-  body {
-  }
-  .flex3 {
-    display: flex;
-  }
-  h1 {
-    font-size: 25px;
-    margin-left: 17px;
-  }
-  .nav {
-    display: block;
-  }
-  p {
-    margin-right: 2px;
-  }
-
-  .bgimg {
-    padding-bottom: 23%;
-  }
-  .p1 {
-    margin: 0;
-    padding: 1px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .flex3 {
-    text-align: left;
-  }
-  .p1 {
-    margin: 0;
-    padding: 1px;
-  }
-  .bgimg {
-    padding-bottom: 17%;
-  }
 }
