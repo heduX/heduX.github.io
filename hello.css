@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* border: 1px solid red; */
+ 
 }
 
 body {
@@ -41,27 +41,12 @@ ul {
 }
 
 /* 通用 */
-/* .omit {
-  width: 300px;
-  height: 100px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-} */
-@-webkit-keyframes width-chin {
-  0%,
-  100% {
-    width: 320px;
-  }
-  50% {
-    width: 260px;
-  }
-}
 .ellipsis {
   position: relative;
   background: rgb(230, 230, 230);
   width: 260px;
-  max-height: 108px; /* h*n */
-  line-height: 18px; /* h */
+  max-height: 108px;
+  line-height: 18px; 
   overflow: hidden;
   -webkit-animation: width-change 8s ease infinite;
 }
@@ -195,9 +180,11 @@ main h2 {
 main p {
   font-size: 17px;
 }
+.main .p1-3 {
+}
 .main-list {
   padding-bottom: 55px;
-  /* margin-top: 33px; */
+ 
 }
 
 .box {
@@ -238,7 +225,8 @@ main p {
   height: 250px;
   object-fit: cover;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-  border: 2px solid #eee;
+ 
+  padding: 1px;
 }
 .case p {
   margin: 50px;
@@ -486,18 +474,7 @@ main p {
   margin-top: 11px;
   padding-bottom: 11px;
 }
-/* 二维码 */
-/* .flex-qrcode {
-  justify-content: flex-end;
-  display: flex;
-  position: relative;
-  top: -88px;
-}
-.flex-qrcode img {
-  border: 5px solid #171717;
-  margin-right: 17px;
-  background-color: #171717;
-} */
+
 /* 伪类 */
 
 .more-cases a:hover {
@@ -538,4 +515,243 @@ main p {
 }
 /* 手机 */
 @media screen and (max-width: 600px) {
+  .container {
+    width: 92%;
+    padding: 0 px;
+    margin: auto;
+  }
+  .flex {
+    display: flex;
+  }
+
+  /* 导航 */
+  .nav .spacex {
+    margin-top: 5px;
+  }
+  .nav .spacex p {
+    padding-left: 11px;
+    font-size: 11px;
+  }
+
+  .nav-list li {
+    font-size: 11px;
+    margin-left: 5px;
+  }
+
+
+  .number p {
+    font-size: 11px;
+    
+  }
+
+  /* 头部 */
+
+
+  .header h1 {
+    font-size: 28px;
+    margin-bottom: 33px;
+  }
+
+  .header-button {
+    margin-top: 17px;
+  }
+  .header a {
+    color: #32608e;
+
+  }
+
+  /* 主体 */
+
+  .main {
+    margin-top: 55px;
+  }
+  main h2 {
+    font-size: 23px;
+  }
+  main p {
+    font-size: 15px;
+  }
+
+
+  .box {
+  
+    padding: 1px;
+    margin-top: 11px;
+    margin-right: 1px;
+    border: 1px solid #cdcdcd;
+  }
+  .box h3 {
+    padding: 1px;
+    font-size: 17px;
+    margin-bottom: 11px;
+  }
+
+  .box > p {
+  
+    font-size: 13px;
+  }
+
+  .box .p1-3 {
+    margin-top: 50px;
+  }
+
+  /* 案例 */
+
+
+
+  .case-pic img {
+    height: 200px;
+  }
+  .case p {
+    margin: 25%;
+    font-size: 11px;
+  }
+
+  /* 更多案例 */
+  .more-cases {
+    margin-top: 2px;
+  }
+  /* 背景图片栏 */
+
+  .image h6 {
+    color: #eee;
+    font-size: 22px;
+  }
+  .image h6 p {
+    font-size: 8px;
+  }
+
+  .image .item {
+    padding: 100px;
+  }
+  /* 卡片 */
+  .card {
+    padding-top: 66px;
+  }
+  .card-item {
+    margin-bottom: 55px;
+    padding: 11px;
+  }
+  .card-item h6 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .card-h6 {
+    margin-right: 17px;
+  }
+  .card-item p {
+    /* color: #666; */
+    padding-left: 1px;
+    font-size: 11px;
+  }
+
+  /* 咨讯 */
+
+  .news-item {
+    width: 33.33%;
+    font-size: 11px;
+  }
+
+  .news-header p {
+    margin-top: 17px;
+    padding-bottom: 17px;
+  }
+  .news-header a {
+    border-radius: 55px;
+    padding: 5px;
+  }
+  .news-block {
+    padding: 3px;
+  }
+  .news-header strong {
+    display: block;
+    text-align: center;
+  }
+
+  /* 服务区 */
+  .service {
+    margin-top: 55px;
+    margin-bottom: 11px;
+  }
+  .service h1 {
+    font-size: 28px;
+    padding-bottom: 0px;
+  }
+  .service h2 {
+    font-size: 28px;
+    margin-bottom: 11px;
+  }
+
+  .service p {
+    font-size: 16px;
+  }
+  .service-button {
+    justify-content: center;
+    display: flex;
+  }
+  .service a {
+    color: #fff;
+    background-color: #2879fe;
+    text-decoration: none;
+    margin-top: 11px;
+    margin-bottom: 8px;
+    border-radius: 11px;
+  }
+  /* 蓝色区 */
+  .blue-item {
+    padding-top: 137px;
+    padding-bottom: 137px;
+  }
+  /* 商标区 */
+  .logo-header {
+    margin-top: 33px;
+    margin-bottom: 33px;
+  }
+
+  .logo {
+    margin-bottom: 55px;
+  }
+
+  .flex-circle {
+    padding-right: 55px;
+    padding-left: 55px;
+  }
+
+  /* 黑色区 */
+  .black {
+    background-color: #3b218a;
+  }
+
+  .black li {
+    margin-right: 33px;
+  }
+  /* 伪类 */
+  .more-cases a:active {
+    color: #4bc0c8;
+  }
+
+  .header a:active {
+    color: #103a93;
+  }
+  .news-header a:active {
+    background-color: #6c48f2;
+    color: #fff;
+  }
+
+  .bgbac:active {
+    background-color: #007aff;
+    color: white;
+  }
+  .servicac:active {
+    color: violet;
+  }
+  .headeac:active {
+    background-color: #6c48f2;
+  }
+  .case-ac:active {
+    background-color: #6c48f2;
+  }
+  .cirac:active {
+    background-color: #007aff;
+  }
 }
