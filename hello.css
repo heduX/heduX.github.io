@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
- 
 }
 
 body {
@@ -46,7 +45,7 @@ ul {
   background: rgb(230, 230, 230);
   width: 260px;
   max-height: 108px;
-  line-height: 18px; 
+  line-height: 18px;
   overflow: hidden;
   -webkit-animation: width-change 8s ease infinite;
 }
@@ -180,11 +179,9 @@ main h2 {
 main p {
   font-size: 17px;
 }
-.main .p1-3 {
-}
+
 .main-list {
   padding-bottom: 55px;
- 
 }
 
 .box {
@@ -225,7 +222,7 @@ main p {
   height: 250px;
   object-fit: cover;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
- 
+
   padding: 1px;
 }
 .case p {
@@ -538,14 +535,11 @@ main p {
     margin-left: 5px;
   }
 
-
   .number p {
     font-size: 11px;
-    
   }
 
   /* 头部 */
-
 
   .header h1 {
     font-size: 28px;
@@ -557,7 +551,6 @@ main p {
   }
   .header a {
     color: #32608e;
-
   }
 
   /* 主体 */
@@ -572,9 +565,7 @@ main p {
     font-size: 15px;
   }
 
-
   .box {
-  
     padding: 1px;
     margin-top: 11px;
     margin-right: 1px;
@@ -587,17 +578,14 @@ main p {
   }
 
   .box > p {
-  
     font-size: 13px;
   }
 
   .box .p1-3 {
-    margin-top: 50px;
+    margin-top: 33px;
   }
 
   /* 案例 */
-
-
 
   .case-pic img {
     height: 200px;
@@ -622,7 +610,7 @@ main p {
   }
 
   .image .item {
-    padding: 100px;
+    padding: 137px;
   }
   /* 卡片 */
   .card {
@@ -683,7 +671,7 @@ main p {
   }
 
   .service p {
-    font-size: 16px;
+    font-size: 15px;
   }
   .service-button {
     justify-content: center;
