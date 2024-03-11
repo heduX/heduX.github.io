@@ -24,7 +24,7 @@ ul {
   background-size: 100% 100%;
 }
 .bgimg2 {
-  background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/crew8_home_6909efcad5.png);
+  background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Crew8_sunset_022624_DSC_3504_desktop_8eda4876a4.jpg);
   background-size: 100% 100%;
 }
 .bgimg3 {
@@ -75,7 +75,7 @@ ul {
   display: flex;
 }
 .bgblue {
-  background-color: #007aff;
+  background-color: #1d2fc9;
 }
 .bgwhite {
   background-color: #fff;
@@ -123,7 +123,7 @@ ul {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: #6c48f2;
+  background-color: #8082bc;
 }
 .nav .spacex {
   align-items: center;
@@ -197,7 +197,7 @@ main p {
 }
 .main-list {
   padding-bottom: 55px;
-  margin-top: 33px;
+  /* margin-top: 33px; */
 }
 
 .box {
@@ -223,7 +223,8 @@ main p {
 /* 案例 */
 
 .case-header {
-  margin-top: 55px;
+  padding-top: 55px;
+  padding-bottom: 11px;
 }
 
 .case-pic {
@@ -259,7 +260,6 @@ main p {
   margin-top: 2px;
   text-align: center;
   border: 1px #eee solid;
-  margin-bottom: 5px;
   font-size: 22px;
   font-weight: bold;
 }
@@ -288,7 +288,7 @@ main p {
   padding: 66px;
 }
 .image h6 p {
-  font-size: 1px;
+  font-size: 11px;
 }
 
 .image .item {
@@ -327,7 +327,7 @@ main p {
   font-size: 22px;
   font-weight: bold;
   flex-direction: column;
-  padding-top: 22px;
+  padding: 22px;
 }
 
 #news {
@@ -378,9 +378,11 @@ main p {
 .service h1 {
   font-size: 33px;
   font-weight: bold;
+  padding-bottom: 3px;
 }
 .service h2 {
   font-size: 33px;
+  margin-bottom: 33px;
 }
 .service span {
   display: block;
@@ -469,7 +471,6 @@ main p {
 }
 .black li {
   margin-right: 55px;
-  font-size: 22px;
 }
 .black li a {
   color: #fff;
@@ -512,8 +513,8 @@ main p {
 }
 
 .bgblue:hover {
-  background-color: #6c48f2;
-  color: #007aff;
+  background-color: #007aff;
+  color: white;
 }
 .service a:hover {
   color: violet;
@@ -522,12 +523,18 @@ main p {
   background-color: #6c48f2;
 }
 .box:hover {
-  background-color: #6c48f2;
+  background-color: #007aff;
 
   color: #fff;
 }
 .case-pic:hover {
   background-color: #6c48f2;
+}
+.circle:hover {
+  background-color: #007aff;
+}
+.line-list:hover {
+  color: #2879fe;
 }
 /* 手机 */
 @media screen and (max-width: 600px) {
