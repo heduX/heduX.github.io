@@ -1,566 +1,332 @@
 <!DOCTYPE html>
-<html lang="cn">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Space X</title>
-    <link rel="stylesheet" href="hello.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/often.css" />
+    <link rel="stylesheet" href="/css/wangzhan2.0.css" />
   </head>
   <body>
     <!-- 导航 -->
-    <nav class="nav nav-box">
-      <div class="container">
-        <div class="flex space-between">
-          <div class="flex spacex">
-            <a href="https://lafeng01.github.io/">
-              <img
-                src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2021%2F0622%2F68877e82j00qv3alj000nc000hs00aom.jpg&thumbnail=660x2147483647&quality=80&type=jpg"
-                width="66px"
-                height="66px"
-              />
-            </a>
-            <p>Space X让星际旅行更简单</p>
-          </div>
-          <div class="flex">
-            <ul class="flex nav-list">
-              <li><a href="#home">首页 </a></li>
-              <li><a href="#about">关于 </a></li>
-              <li><a href="#information">咨讯 </a></li>
-              <li><a href="#case">案例 </a></li>
-              <li><a href="https://lafeng01.github.io/">联系 </a></li>
+    <nav>
+      <div class="flex-space-around nav-item flex-y-center text-center container phone-height">
+        <ul class="flex">
+          <li id="home" class="nav-list">
+            <a class="ft-color-333" href="#home">网站首页</a>
+          </li>
+          <li id="about" class="nav-list flex-x-center">
+            <a class="ft-color-333">关于我们</a>
+            <ul class="nav-2">
+              <li class="nav-2-border"></li>
+              <!-- 二级导航 -->
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航1</a></li>
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航2</a></li>
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航3</a></li>
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航4</a></li>
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航5</a></li>
             </ul>
+          </li>
+          <li id="news" class="nav-list flex-x-center">
+            <a href="">新闻资讯</a>
+            <ul class="nav-2">
+              <li class="nav-2-border"></li>
+              <!-- 二级导航 -->
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航1</a></li>
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航2</a></li>
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航3</a></li>
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航4</a></li>
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航5</a></li>
+            </ul>
+          </li>
+          <li id="business" class="nav-list flex-x-center">
+            <a href="">主营业务</a>
+            <ul class="nav-2">
+              <li class="nav-2-border"></li>
+              <!-- 二级导航 -->
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航1</a></li>
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航2</a></li>
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航3</a></li>
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航4</a></li>
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航5</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="nav-phone">
+          <div id="logo-header" class="flex-y-center">
+            <a href="https://hedux.github.io">
+              <img src="../img/nav_logo.png " />
+            </a>
           </div>
-          <div class="number">
-            <p>0011-2233</p>
+          <div id="icon-header" class="icon-header">
+            <svg t="1710913361256" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1004" width="66" height="66">
+              <path
+                d="M838.6 484.7H578.5c-22.5 0-40.7-18.3-40.7-40.7V183.9c0-22.5 18.3-40.7 40.7-40.7h260.1c22.5 0 40.7 18.3 40.7 40.7V444c0 22.5-18.2 40.7-40.7 40.7zM578.5 170.8c-7.3 0-13.2 5.9-13.2 13.2v260c0 7.3 5.9 13.2 13.2 13.2h260.1c7.3 0 13.2-5.9 13.2-13.2V183.9c0-7.3-5.9-13.2-13.2-13.2H578.5zM838.6 880.4H578.5c-22.5 0-40.7-18.3-40.7-40.7V579.6c0-22.5 18.3-40.7 40.7-40.7h260.1c22.5 0 40.7 18.3 40.7 40.7v260.1c0 22.5-18.2 40.7-40.7 40.7zM578.5 566.5c-7.3 0-13.2 5.9-13.2 13.2v260.1c0 7.2 5.9 13.1 13.2 13.1h260.1c7.3 0 13.2-5.9 13.2-13.1V579.6c0-7.3-5.9-13.2-13.2-13.2H578.5zM444.1 484.7H184c-22.5 0-40.7-18.3-40.7-40.7V183.9c0-22.5 18.3-40.7 40.7-40.7h260.1c22.5 0 40.7 18.3 40.7 40.7V444c0 22.5-18.3 40.7-40.7 40.7zM184 170.8c-7.3 0-13.2 5.9-13.2 13.2v260c0 7.3 5.9 13.2 13.2 13.2h260.1c7.3 0 13.2-5.9 13.2-13.2V183.9c0-7.3-5.9-13.2-13.2-13.2H184zM444.1 880.4H184c-22.5 0-40.7-18.3-40.7-40.7V579.6c0-22.5 18.3-40.7 40.7-40.7h260.1c22.5 0 40.7 18.3 40.7 40.7v260.1c0 22.5-18.3 40.7-40.7 40.7zM184 566.5c-7.3 0-13.2 5.9-13.2 13.2v260.1c0 7.2 5.9 13.1 13.2 13.1h260.1c7.3 0 13.2-5.9 13.2-13.1V579.6c0-7.3-5.9-13.2-13.2-13.2H184z"
+                fill="#3259CE"
+                p-id="1005"
+              ></path>
+            </svg>
           </div>
         </div>
+        <ul class="flex">
+          <li id="case" class="nav-list"><a class="ft-color-333">经典案例</a></li>
+
+          <li id="industry" class="nav-list flex-x-center">
+            <a href="">产业板块</a>
+            <ul class="nav-2">
+              <li class="nav-2-border"></li>
+              <!-- 二级导航 -->
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航1</a></li>
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航2</a></li>
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航3</a></li>
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航4</a></li>
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航5</a></li>
+            </ul>
+          </li>
+          <li id="resources" class="nav-list flex-x-center">
+            <a href="">人力资源</a>
+            <ul class="nav-2">
+              <li class="nav-2-border"></li>
+              <!-- 二级导航 -->
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航1</a></li>
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航2</a></li>
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航3</a></li>
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航4</a></li>
+              <li class="list-2"><a href="https://www.hedux.github.io">二级导航5</a></li>
+            </ul>
+          </li>
+          <li id="contact" class="nav-list">
+            <a href="">联系我们</a>
+          </li>
+        </ul>
       </div>
     </nav>
-    <div class="bgimg4" id="home">
-      <!-- 头部 -->
-      <header class="header fontwhite container">
-        <h1>
-          欢迎来到我们<br />
-          宇宙探索公司
-        </h1>
-        <div>
-          <p>
-            我们致力于探索宇宙的奥秘，揭示宇宙的未知之处。无论是星际探险还是宇宙科学研究，我们都将祝您一臂之力。
-          </p>
-          <p>加入我们，一起踏上无尽星辰的探索之旅！</p>
-          <div class="header-button">
-            <a href="https://lafeng01.github.io/">免费获取方案</a>
+    <!-- 头部 -->
+    <header>
+      <div class="header">
+        <!-- 背景图 -->
+        <div class="header-pic flex-x-center flex-y-center" style="background-image: url(../img/about_banner.jpg)">
+          <div class="text-center">
+            <h1>董事长辞职</h1>
+            <h2>CHAIRMAN RESIGNS</h2>
+            <div class="flex-x-center">
+              <div class="header-border" style="border: 2px solid #fff"></div>
+            </div>
           </div>
         </div>
-      </header>
-    </div>
+      </div>
+    </header>
     <!-- 主体 -->
     <main>
-      <div class="container main">
-        <h2>2年半技术积累,只为更好飞天</h2>
-        <p class="font-grey">
-          拥有顶尖的研发能力和前瞻的创新思想，拥有高精尖领域绝对优势,
-        </p>
-        <p class="font-grey">是星际漫游的最佳选择！</p>
+      <!-- 主体导航 -->
+      <ul class="flex-space-around">
+        <li class="border-right border-bottom lailai"><a href="https://hedux.github.io/">赖赖</a></li>
+        <li class="border-right border-bottom bibi"><a href="https://hedux.github.io/">哔哔</a></li>
+        <li class="border-right border-bottom home"><a href="https://hedux.github.io/"> Home</a></li>
+        <li class="border-right border-bottom about"><a href="https://hedux.github.io/"> About </a></li>
+        <li class="border-right border-bottom contact"><a href="https://hedux.github.io/">Contact </a></li>
+        <li class="border-bottom optional"><a href=""> Optional</a></li>
+      </ul>
+
+      <!-- 主体 -->
+      <div class="main-bgimg">
+        <div class="main-container felx-space-between">
+          <div>
+            <div class="item-zero">
+              <h2>董事长辞职</h2>
+              <h3>CHAIRMAN'S SPEECH</h3>
+            </div>
+            <span class="item-one">
+              <p class="one-p1">我谨代表人机有限捡垃圾公司全体人机，向多年来鼎力支持，帮助我公司发展的各界同仁和合作</p>
+              <p class="one-p2">伙伴表示最由衷的感谢!</p>
+            </span>
+            <span class="item-tow">
+              <p class="tow-p1">“做一项工程、交一方朋友、数百年口碑”是我们的祈愿，我们奉行“敲诈客户、自私自利、压榨员工、危害社会”</p>
+              <p class="tow-p2">的企业宗旨。诚挚希望与社会各界有识之士精诚合作、互惠互利、共谋发展、再铸辉煌!</p>
+            </span>
+
+            <div class="flex-y-center name-container">
+              <div class="item-name">
+                <p>人机鸡蛋董事长：</p>
+              </div>
+              <div id="qiangmin">
+                <img src="../img/qianming.png" />
+              </div>
+            </div>
+          </div>
+          <div class="main-people-pic">
+            <img src="../img/0-0-0-0.jpg" />
+          </div>
+        </div>
       </div>
     </main>
-    <div class="container flex main-list">
-      <div class="box text-center shadow font-grey">
-        <h3>太空探索</h3>
-        <p>SPACE EXPLORATION</p>
-        <p class="p1">从地球到星际</p>
-        <p>我们助您探索宇宙奥秘</p>
-      </div>
-      <div class="box text-center shadow font-grey">
-        <h3>科学研究</h3>
-        <p>SCIENTIFIC RESEARCH</p>
-        <p class="p1">我们致力于解开宇宙的谜团</p>
-        <p>推动科学进步</p>
-      </div>
-      <div class="box text-center shadow font-grey">
-        <h3>太空旅行</h3>
-        <p>SPACE TRAVEL</p>
-        <p class="p1-3">体验宇宙之美</p>
-        <p>开启独特的太空之旅</p>
-      </div>
-      <div class="box text-center shadow font-grey">
-        <h3>未来愿景</h3>
-        <p>FUTURE VISION</p>
-        <p class="p1">我们的愿景是探索更远的星系</p>
-        <p>开拓更广阔的未来</p>
-      </div>
-    </div>
-
-    <!-- 案例 -->
-    <div class="bggrey">
-      <div class="container case-header">
-        <div class="bgwhite bggrey">
-          <h4>案例</h4>
-          <h5 id="case">CASE</h5>
-        </div>
-        <div class="case flex">
-          <div class="case-pic shadow">
-            <img
-              src=" https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2023%2F0421%2Faefe8293j00rtgnni009oc000hs00bvm.jpg&thumbnail=660x2147483647&quality=80&type=jpg"
-              alt="图片"
-            />
-            <p>火箭倒计时</p>
-            <p>迎接未知的挑战</p>
+    <!-- 尾部 -->
+    <footer>
+      <div class="footer">
+        <div class="footer-bg">
+          <div class="flex footer-container">
+            <div class="footer-item">
+              <h2 class="ft-color-fff">关于我们</h2>
+              <ul class="ft-color-A7B7D2">
+                <li><a href="">董事长辞职</a></li>
+                <li><a href="">公司简介</a></li>
+                <li><a href="">发展历程</a></li>
+                <li><a href="">企业文化</a></li>
+                <li><a href="">荣誉资质</a></li>
+                <li><a href="">视屏集锦</a></li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <h2 class="ft-color-fff">
+                <a class="ft-color-fff" href="">新闻资讯</a>
+              </h2>
+              <ul class="ft-color-A7B7D2">
+                <li><a href="">公司动态</a></li>
+                <li><a href="">行业动态</a></li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <h2 class="ft-color-fff">主营业务</h2>
+              <ul class="ft-color-A7B7D2">
+                <li><a href="">制冷工程</a></li>
+                <li><a href="">供热工程</a></li>
+                <li><a href="">智能化工程</a></li>
+                <li><a href="">洁净净化工程</a></li>
+                <li><a href="">压力管道工程</a></li>
+                <li><a href="">装饰装修工程</a></li>
+                <li><a href="">钢结构工程</a></li>
+                <li><a href="">节能改造工程</a></li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <h2 class="ft-color-fff">经典案例</h2>
+              <ul class="ft-color-A7B7D2">
+                <li><a href="">经典案例</a></li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <h2 class="ft-color-fff">产业板块</h2>
+              <ul class="ft-color-A7B7D2">
+                <li><a href="">强生能源</a></li>
+                <li><a href="">砺冰科技</a></li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <h2 class="ft-color-fff">人力资源</h2>
+              <ul class="ft-color-A7B7D2">
+                <li><a href="">用人理念</a></li>
+                <li><a href="">员工福利</a></li>
+                <li><a href="">应聘窗口</a></li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <h2 class="ft-color-fff">联系我们</h2>
+              <ul class="ft-color-A7B7D2">
+                <li><a href="">联系我们</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="case-pic shadow">
-            <img
-              src=" https://img95.699pic.com/photo/50031/4624.jpg_wh860.jpg"
-              alt="图片"
-            />
-            <p>探索宇宙奥秘</p>
-            <p>永攀星辰大海</p>
-          </div>
-          <div class="case-pic shadow">
-            <img
-              src="https://pic4.zhimg.com/v2-f81d561e95403cf2af61ffd8ad172ffd_r.jpg"
-              height="48%"
-              width="100%"
-            />
-            <p>穿越星际</p>
-            <p>探寻宇宙的奇迹</p>
-          </div>
-          <div class="case-pic shadow">
-            <img
-              src="https://www.aijianmo.com/Uploads/Editor/Picture/2021-04-02/606671e73b21e.png"
-              alt="图片"
-            />
-            <p>启程探索</p>
-            <p>照亮星空之路</p>
-          </div>
-        </div>
-
-        <div class="case flex">
-          <div class="case-pic shadow">
-            <img
-              src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2024%2F0209%2Fbc61a403j00s8kt6y0054d000si00j1m.jpg&thumbnail=660x2147483647&quality=80&type=jpg"
-              alt="图片"
-            />
-            <p>科学与冒险的融合</p>
-            <p>开启宇宙之旅</p>
-          </div>
-          <div class="case-pic shadow">
-            <img
-              src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2023%2F1119%2F68b2347cj00s4cux70084d000v900kup.jpg&thumbnail=660x2147483647&quality=80&type=jpg
-            height="
-            />
-            <p>勇往直前</p>
-            <p>追逐星辰的脚步</p>
-          </div>
-          <div class="case-pic shadow">
-            <img
-              src=" https://oss.im2maker.com/uploadfile/2016/0809/20160809031917463.png?x-oss-process=image/resize,m_fill,w_1200"
-              alt="图片"
-            />
-            <p>超越地球</p>
-            <p>探寻宇宙的奥秘之门</p>
-          </div>
-          <div class="case-pic shadow">
-            <img
-              src="https://n.sinaimg.cn/sinakd20110/617/w1419h798/20210328/04bd-kmvwsvy7521876.jpg "
-              alt="图片"
-            />
-            <p>探索未知</p>
-            <p>挑战宇宙的极限</p>
-          </div>
-        </div>
-        <div class="case flex">
-          <div class="case-pic shadow">
-            <img
-              src="https://pic1.zhimg.com/v2-624d55858a827c2e49c412f39106b355_r.jpg?source=2c26e567"
-              alt="图片"
-            />
-            <p>飞向星辰</p>
-            <p>谱写宇宙的壮丽乐章</p>
-          </div>
-          <div class="case-pic shadow">
-            <img
-              src=" https://img1.baidu.com/it/u=827900969,1494219403&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=750 "
-              alt="图片"
-            />
-            <p>航向未来</p>
-            <p>探寻宇宙的无限可能</p>
-          </div>
-          <div class="case-pic shadow">
-            <img
-              src="https://nimg.ws.126.net/?url=https://dingyue.ws.126.net/6ynNeMjBCoT1FfmMvFAcrTHOY5S3JgRPAMMc5SPLvIF5S1555045307022compressflag.jpg&thumbnail=650x2147483647&quality=80&type=jpg"
-              alt="图片"
-            />
-            <p>探寻宇宙奥秘</p>
-            <p>梦想在星空中闪耀</p>
-          </div>
-          <div class="case-pic shadow">
-            <img
-              src="https://pic.rmb.bdstatic.com/bjh/events/aa95a5053c0058bd0335131808b03ad63406.jpeg@h_1280"
-              alt="图片"
-            />
-            <p>启程远航</p>
-            <p>宇宙等待着我们出发</p>
-          </div>
-        </div>
-        <!-- 更多案例 -->
-        <div class="more-cases bgwhite">
-          <a href="https://lafeng01.github.io/">更多案例</a>
-        </div>
-      </div>
-    </div>
-    <!-- 背景图片栏 -->
-    <div id="about" class="image">
-      <div class="item">
-        <div class="image-list">
-          <h6 class="b-border r-border">
-            1000+
-            <p>发射成功</p>
-          </h6>
-          <h6 class="b-border r-border">
-            2000+
-            <p>科技专利</p>
-          </h6>
-          <h6 class="b-border">
-            5000+
-            <p>企业合作</p>
-          </h6>
-        </div>
-        <div class="image-list flex">
-          <h6 class="r-border">
-            9000+
-            <p>卫星发射</p>
-          </h6>
-          <h6 class="r-border">
-            9000+
-            <p>成功案例</p>
-          </h6>
-          <h6>
-            3000+
-            <p>星空漫游</p>
-          </h6>
-        </div>
-      </div>
-    </div>
-    <!-- 卡片 -->
-
-    <div class="container card">
-      <div class="card-item shadow2 flex">
-        <div class="flex card-h6">
-          <h6>SPACEX</h6>
-        </div>
-        <div>
-          <p>
-            探索宇宙中的未知领域,推动科学技术的发展,以实现人类对宇宙的深入了解.我们致力于开发前沿的太空探索项目,积极出纳与科学
-            研究,推动人类文明迈向跟高层次。
-          </p>
-          <p>
-            通过太空旅行和科学探索,我们激发人们对宇宙的好奇心,激励他们追求知识和智慧.我们的使命是为了创造一个更加繁荣和谐
-            充满希望的未来
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- 咨讯 -->
-    <div class="bggrey news-header">
-      <div class="container news-title flex">
-        <h2>咨讯</h2>
-        <h2 id="news">NEWS</h2>
-      </div>
-      <div id="information" class="container flex">
-        <div class="news-item bgwhite shadow">
-          <img
-            src="https://img1.mydrivers.com/img/20230728/803bb8af-189a-4712-9518-fe979c03bbf9.png"
-          />
-          <div class="news-block width-chin">
-            <strong>SpaceX火箭在地球上空击穿了一个洞:干扰GPS</strong>
-            <p>
-              近日，一名摄影师拍到了一枚火箭击穿地球大气电离层后留下红色余辉的壮观场景。
-              这枚火箭是来自SpaceX的猎鹰9号,二级发动机排放的气体快速撞击电离层，使得其中的氧离子与火箭排放物结合，释放
-            </p>
-          </div>
-        </div>
-        <div class="news-item bgwhite shadow">
-          <img
-            src="https://img1.mydrivers.com/img/20230517/4684b4b3-0bea-4df2-b9df-451ce02173ce.jpg"
-          />
-          <div class="news-block">
-            <strong
-              >SpaceX已经成功 我国征集空间站商业飞船:每吨运费不超1.2亿</strong
+          <!--备案 友情链接 矢量图标-->
+          <div class="flex-y-center link-container footer-container">
+            <span class="footer-link"
+              ><a class="ft-color-fff"> <span class="trademark">2020</span> ALL RESERVED.Powered By Vango 沪ICP备2020001号-1 （江南） 版权所有 <span class="trademark">Space X</span></a></span
             >
-            <p>
-              国际空间站已经开放商业运输多年,SapceX的龙飞船已经成为运输货物及人员
-              的常客,降低了运行成本，我国现在也尝试空间站商业化运输了,已向社会征集方案,每吨运费不超过1.2亿元。
-            </p>
+            <div class="flex-column">
+              <div class="flex-end footer-icon">
+                <!-- 微信 -->
+                <svg t="1710944206816" class="wechat-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10250" width="36" height="36">
+                  <path
+                    d="M512 67C266.265 67 67 266.262 67 512.007S266.236 956.985 512 957c245.735-0.015 445-199.262 445-445.008C957 266.247 757.765 67 512 67zM512 927.319c-229.019 0-415.333-186.298-415.333-415.313C96.667 282.978 282.981 96.666 512 96.695c229.019-0.015 415.334 186.282 415.334 415.312C927.334 741.021 741.019 927.319 512 927.319z"
+                    fill="#DCDDDD"
+                    p-id="10251"
+                  ></path>
+                  <path
+                    d="M468.92 380.074c0 14.34 11.646 25.957 25.987 25.957s25.929-11.617 25.929-25.957c0-14.341-11.588-25.958-25.929-25.958S468.92 365.733 468.92 380.074z"
+                    fill="#DCDDDD"
+                    p-id="10252"
+                  ></path>
+                  <path
+                    d="M337.013 380.074c0 14.34 11.618 25.957 25.929 25.957 14.341 0 25.987-11.617 25.987-25.957 0-14.341-11.646-25.958-25.987-25.958C348.631 354.116 337.013 365.733 337.013 380.074z"
+                    fill="#DCDDDD"
+                    p-id="10253"
+                  ></path>
+                  <path
+                    d="M593.584 365.168c7.938-0.941 16.021-1.521 24.22-1.666-30.594-64.706-103.341-110.364-188.082-110.364-112.235 0-203.553 80.047-203.553 178.446 0 56.537 30.391 109.351 81.728 143.015l-40.473 95.937 99.864-69.24c13.559 3.839 27.32 6.302 41.14 7.619-2.028-7.503-3.65-15.122-4.693-22.915-11.82-1.521-23.554-3.94-35.113-7.519l-5.157-1.594-45.746 31.709 18.165-43.051-8.373-4.939c-49.512-29.231-79.092-77.468-79.092-129.021 0-86.131 81.352-156.196 181.303-156.196C502.092 275.388 564.525 312.21 593.584 365.168z"
+                    fill="#DCDDDD"
+                    p-id="10254"
+                  ></path>
+                  <path
+                    d="M797.832 562.011c0-85.029-78.831-154.212-175.683-154.212-96.88 0-175.683 69.183-175.683 154.212s78.803 154.212 175.683 154.212c17.847 0 35.692-2.463 53.075-7.33l89.319 61.969-36.243-85.971C772.019 655.804 797.832 610.508 797.832 562.011zM708.745 670.912l-8.402 4.954 13.936 33.026-35.2-24.407-5.157 1.593c-16.919 5.244-34.331 7.895-51.771 7.895-84.597 0-153.433-59.201-153.433-131.962 0-72.76 68.836-131.962 153.433-131.962s153.433 59.202 153.433 131.962C775.582 605.525 750.579 646.243 708.745 670.912z"
+                    fill="#DCDDDD"
+                    p-id="10255"
+                  ></path>
+                  <path
+                    d="M566.408 495.696c-12.283 0-22.25 9.98-22.25 22.265 0 12.283 9.967 22.234 22.25 22.234 12.284 0 22.221-9.951 22.221-22.234C588.629 505.677 578.692 495.696 566.408 495.696z"
+                    fill="#DCDDDD"
+                    p-id="10256"
+                  ></path>
+                  <path
+                    d="M679.252 495.696c-12.284 0-22.25 9.98-22.25 22.265 0 12.283 9.966 22.234 22.25 22.234s22.221-9.951 22.221-22.234C701.473 505.677 691.536 495.696 679.252 495.696z"
+                    fill="#DCDDDD"
+                    p-id="10257"
+                  ></path>
+                </svg>
+                <!-- 抖音 -->
+                <svg t="1710943973395" class="tiktok-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4266" width="36" height="36">
+                  <path
+                    d="M512 63.488c-123.904 0-235.9296 50.176-317.2352 131.2768C113.664 276.0704 63.488 388.096 63.488 512s50.176 235.9296 131.2768 317.2352C276.0704 910.336 388.096 960.512 512 960.512s235.9296-50.176 317.2352-131.2768C910.336 747.9296 960.512 635.904 960.512 512s-50.176-235.9296-131.2768-317.2352C747.9296 113.664 635.904 63.488 512 63.488z m293.4784 741.9904C730.5216 880.64 626.688 927.1296 512 927.1296c-114.688 0-218.5216-46.4896-293.4784-121.6512C143.36 730.5216 96.8704 626.688 96.8704 512c0-114.688 46.4896-218.5216 121.6512-293.4784C293.4784 143.36 397.312 96.8704 512 96.8704c114.688 0 218.5216 46.4896 293.4784 121.6512C880.64 293.4784 927.1296 397.312 927.1296 512c0 114.688-46.4896 218.5216-121.6512 293.4784z"
+                    fill="#D4D5D5"
+                    p-id="4267"
+                  ></path>
+                  <path
+                    d="M723.1488 383.5904c-62.6688 0-113.4592-50.7904-113.4592-113.4592h-84.992v329.1136c0 38.2976-30.9248 69.2224-69.2224 69.2224-38.2976 0-69.2224-31.1296-69.2224-69.2224 0-38.2976 31.1296-69.2224 69.2224-69.2224 7.168 0 15.36 1.024 21.9136 3.072V446.464c-7.168-1.024-14.336-1.4336-21.9136-1.4336-85.1968 0-154.4192 69.0176-154.4192 154.4192 0 85.1968 69.0176 154.4192 154.4192 154.4192 85.1968 0 154.4192-69.0176 154.4192-154.4192v-174.2848c30.9248 25.1904 70.4512 40.3456 113.4592 40.3456v-81.92z"
+                    fill="#D4D5D5"
+                    p-id="4268"
+                  ></path>
+                </svg>
+                <!-- 微博 -->
+                <svg t="1710944152334" class="weibo-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8352" width="36" height="36">
+                  <path
+                    d="M512 67C266.265 67 67 266.262 67 512.008S266.236 956.985 512 957c245.735-0.015 445-199.262 445-445.008C957 266.248 757.765 67 512 67zM512 927.32c-229.019 0-415.333-186.298-415.333-415.313 0-229.03 186.314-415.341 415.333-415.313 229.019-0.014 415.334 186.283 415.334 415.313C927.334 741.022 741.019 927.32 512 927.32z"
+                    fill="#DCDDDD"
+                    p-id="8353"
+                  ></path>
+                  <path
+                    d="M663.477 502.766c-12.588 0-30.246-11.342-20.149-22.669 10.082-11.328 11.343-62.998-31.507-70.544-42.805-7.576-74.312 7.533-84.394 11.328-10.096 3.795-36.532 1.26-25.19-15.123 11.343-16.368 10.067-64.257-39.053-64.257-49.15 0-116.017 37.619-179.377 112.726-40.748 48.323-77.31 112.219-52.901 176.984 17.296 45.86 67.518 81.204 110.815 98.428 35.49 14.124 79.526 16.297 117.682 16.297 151.173 0 260.786-104.571 263.292-163.788C725.229 522.93 676.094 502.766 663.477 502.766zM463.386 702.056c-97.575 9.923-181.665-31.172-187.807-91.808-6.186-60.622 67.924-117.81 165.455-127.733 97.576-9.923 181.665 31.172 187.822 91.809C635.013 634.945 560.933 692.135 463.386 702.056z"
+                    fill="#DCDDDD"
+                    p-id="8354"
+                  ></path>
+                  <path
+                    d="M420.726 533.721c-51.076 10.69-85.943 50.729-77.831 89.463 8.083 38.748 56.03 61.505 107.121 50.844 51.105-10.676 85.929-50.728 77.846-89.463C519.778 545.831 471.802 523.06 420.726 533.721zM408.108 648.895c-21.019 0-38.039-12.762-38.039-28.521 0-15.774 17.021-28.536 38.039-28.536s38.04 12.762 38.04 28.536C446.148 636.133 429.127 648.895 408.108 648.895zM466.964 599.731c-8.865 0-16.021-7.171-16.021-16.007 0-8.821 7.156-15.977 16.021-15.977 8.808 0 15.978 7.155 15.978 15.977C482.941 592.561 475.771 599.731 466.964 599.731z"
+                    fill="#DCDDDD"
+                    p-id="8355"
+                  ></path>
+                  <path
+                    d="M706.268 472.969c4.766-10.299 7.171-21.308 7.171-32.723 0-43.036-35.013-78.077-78.063-78.077-7.722 0-15.384 1.145-22.772 3.375l5.853 19.164c5.476-1.666 11.183-2.506 16.92-2.506 32.013 0 58.044 26.045 58.044 58.043 0 8.488-1.782 16.673-5.331 24.321L706.268 472.969z"
+                    fill="#DCDDDD"
+                    p-id="8356"
+                  ></path>
+                  <path
+                    d="M634.983 278.068c-16.253 0-32.303 2.346-47.716 6.981l7.691 25.582c12.907-3.882 26.379-5.852 40.024-5.852 76.817 0 139.28 62.476 139.28 139.277 0 16.948-2.999 33.49-8.909 49.193l24.974 9.415c7.069-18.715 10.646-38.43 10.646-58.608C800.975 352.537 726.504 278.068 634.983 278.068z"
+                    fill="#DCDDDD"
+                    p-id="8357"
+                  ></path>
+                </svg>
+              </div>
+              <div class="footer-input felx-space-between flex-y-center">
+                <p class="ft-color-cdd6e5">强生友情链接</p>
+                <svg t="1710944522035" class="icon-bottom" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="22269" width="22" height="22">
+                  <path
+                    d="M175.9792 326.9552c-9.3728-9.3728-24.5696-9.3728-33.9424 0-9.3712 9.3728-9.3712 24.568 0 33.9408l324.2432 324.2432c25.248 25.248 66.184 25.248 91.4304 0L881.9536 360.896c9.3728-9.3728 9.3728-24.568 0-33.9408-9.3728-9.3728-24.568-9.3728-33.9408 0L523.7696 651.1968c-6.5024 6.504-17.0448 6.504-23.5488 0L175.9792 326.9552z"
+                    fill="#979797"
+                    p-id="22270"
+                  ></path>
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="news-item bgwhite shadow">
-          <img
-            src="https://img1.mydrivers.com/img/20230512/s_570b586d8a4b4596baff992e3e2136b5.jpg"
-          />
-          <div class="news-block">
-            <strong>世界第一座私人空间站来了!马斯克SpaceX背后输出</strong>
-            <p>
-              5月12日讯,商业太空的时代正加速到来。
-              美国初创航天公司Vast宣布,将于SpaceX合作,搭建世界上第一座私营空间站Haven
-              1,预计2025年末部署。
-            </p>
-          </div>
-        </div>
       </div>
-      <div class="container news-list flex">
-        <div class="news-item bgwhite shadow">
-          <img
-            src="https://img1.mydrivers.com/img/20230423/a383560b93b442cba39542dc424f4240.png"
-          />
-          <div class="news-block">
-            <strong
-              >要送8万名地球人去火星
-              马斯克：一切都是在推动世界向可持续的未来发展</strong
-            >
-            <p>
-              4月23日讯,造电动车、部署太阳能电池板、发射火箭、要送8万人去火星......在马斯克看来，他所做的一切，都是为了一个目标——推动世界向可持续的未来发展。
-            </p>
-          </div>
-        </div>
-        <div class="news-item bgwhite shadow">
-          <img
-            src="https://img1.mydrivers.com/img/20210423/735f9e59690542b8863cc12b38140d77.jpg"
-          />
-          <div class="news-block">
-            <strong>火星探索会死很多人 不是富人逃生通道</strong>
-            <p>
-              火星是人类目前公认的具有价值的行星，距离地球最近，大小和活动规律和地球也比较相似。
-              有科学家预测火星除了极地之外，存在液态水的痕迹，人类如果想要进军更深的宇宙，火星将会是绝佳的中转站。
-            </p>
-          </div>
-        </div>
-        <div class="news-item bgwhite shadow">
-          <img
-            src="https://img1.mydrivers.com/img/20201207/844c10422f4d475296220c000906f39e.jpg"
-          />
-          <div class="news-block">
-            <strong
-              >火星任务不是什么“B计划”,而是关系到“我们希望成为一个多行星物种和一个航天文明”的目标。</strong
-            >
-            <p>
-              “火星是一个真正的星球，所以我们可以在那里创造一个真正的文明，”并补充说，“也有这种可怕的恐怖，但这将是一个伟大的冒险，并成为有史以来最令人兴奋的事情之一，如果你不死的话。
-              这将是我为火星做的广告。”
-            </p>
-          </div>
-        </div>
-      </div>
-      <p>
-        <a href="https://hedux.github.io/">MORE</a>
-      </p>
-    </div>
-    <!-- 服务区 -->
-    <div class="bgwhite service container">
-      <h1>发射成功100+</h1>
-      <h2>领袖企业的成功经验</h2>
-      <span>
-        <p>前瞻的技术视野,</p>
-        <p>得心应手的设计应用和创新能力,</p>
-        <p>使Space X在民营企业中一枝独秀</p>
-        <p>共同见证了一个又一个的世界领袖企业的成长故事</p>
-      </span>
-      <div class="service-button">
-        <a href="https://lafeng01.github.io/">即刻联系</a>
-      </div>
-    </div>
-
-    <!-- 蓝色区 -->
-
-    <div class="bgblue">
-      <div class="bgblue container">
-        <div class="blue-item flex">
-          <p><a href="https://www.nasa.gov/">星际探索 </a></p>
-          <p><a href="https://www.most.gov.cn/index.html">科学技术 </a></p>
-          <p>
-            <a href="https://www.gov.cn/zhengce/202401/content_6925405.htm"
-              >未来文明
-            </a>
-          </p>
-          <p><a href="https://www.cnsa.gov.cn/">宇宙奥秘 </a></p>
-        </div>
-      </div>
-    </div>
-
-    <!-- 商标区 -->
-    <div class="logo">
-      <div class="logo-header">
-        <div class="flex container bgwhite shadow">
-          <img
-            src="https://oss.qianfox.com/files/20221124/4a6deedcb84d0ba0.jpeg"
-            alt="  Only handsome boy or beautiful girl can see it"
-            height="100%"
-            width="16.6%"
-            title="橙留香O(∩_∩)O"
-          />
-          <img
-            src="https://oss.qianfox.com/files/20221124/b2109061c79c2a3c.jpeg"
-            alt="  Only handsome boy or beautiful girl can see it"
-            height="100%"
-            width="16.6%"
-            title="肥猪(*╹▽╹*)"
-          />
-          <img
-            src="https://oss.qianfox.com/files/20221124/b969fa194d2637f6.jpg"
-            alt="  Only handsome boy or beautiful girl can see it"
-            height="100%"
-            width="16.6%"
-            title="丑小鸭^_^"
-          />
-          <img
-            src="https://oss.qianfox.com/files/20221124/105c94c4b6c4847e.jpeg"
-            alt="  Only handsome boy or beautiful girl can see it"
-            height="100%"
-            width="16.6%"
-            title="盗版o(╥﹏╥)o"
-          />
-          <img
-            src="https://oss.qianfox.com/files/20221124/ce221ee52a055454.jpeg"
-            alt="  Only handsome boy or beautiful girl can see it"
-            height="100%"
-            width="16.6%"
-            title="陆小果¦3[▓▓] "
-          />
-          <img
-            src="https://oss.qianfox.com/files/20221124/52bfe71fa3d8e1c3.jpeg"
-            alt="  Only handsome boy or beautiful girl can see it"
-            height="100%"
-            width="16.6%"
-            title="伟大的工人阶级^_^"
-          />
-        </div>
-
-        <div class="flex container bgwhite shadow">
-          <img
-            src="https://oss.qianfox.com/files/20221124/973f2c7886191856.jpg"
-            alt="  Only handsome boy or beautiful girl can see it"
-            height="100%"
-            width="16.6%"
-            title="祝你平安(*^▽^*)"
-          />
-          <img
-            src="https://oss.qianfox.com/files/20221124/b20b102d5c05d932.jpeg"
-            alt="  Only handsome boy or beautiful girl can see it"
-            height="100%"
-            width="16.6%"
-            title="一点都不甜^_^"
-          />
-          <img
-            src="https://oss.qianfox.com/files/20221124/ff6217ab93a99055.jpeg"
-            alt="  Only handsome boy or beautiful girl can see it"
-            height="100%"
-            width="16.6%"
-            title="祝你平安(*^▽^*)"
-          />
-          <img
-            src="https://oss.qianfox.com/files/20221124/9e31b45996761520.jpg"
-            alt="  Only handsome boy or beautiful girl can see it"
-            height="100%"
-            width="16.6%"
-            title="悍匪出击(*^▽^*)"
-          />
-          <img
-            src="https://oss.qianfox.com/files/20221124/6ac57ad2874cff07.jpeg"
-            alt="  Only handsome boy or beautiful girl can see it"
-            height="100%"
-            width="16.6%"
-            title="悍匪出击(*^▽^*)"
-          />
-          <img
-            src="https://oss.qianfox.com/files/20221124/fa249face488f34e.jpg"
-            alt="  Only handsome boy or beautiful girl can see it"
-            height="100%"
-            width="16.6%"
-            title="请升级您的显卡^_^"
-          />
-        </div>
-
-        <div class="flex container bgwhite shadow">
-          <img
-            src="https://oss.qianfox.com/files/20221124/c5b1eff7808cd807.jpg"
-            alt="  Only handsome boy or beautiful girl can see it"
-            height="100%"
-            width="16.6%"
-            title="中国电信^_^"
-          />
-          <img
-            src="https://oss.qianfox.com/files/20221124/07ae1e2305b3c05a.jpg"
-            alt="  Only handsome boy or beautiful girl can see it"
-            height="100%"
-            width="16.6%"
-            title="王思聪^_^"
-          />
-          <img
-            src="https://oss.qianfox.com/files/20221124/8b1a732137ca022b.jpeg"
-            alt="  Only handsome boy or beautiful girl can see it"
-            height="100%"
-            width="16.6%"
-            title="支持清洁能源(*^▽^*)"
-          />
-          <img
-            src="https://oss.qianfox.com/files/20221124/fedc7ec6cfad3c7d.jpeg"
-            alt="  Only handsome boy or beautiful girl can see it"
-            height="100%"
-            width="16.6%"
-            title="好贵不吃^_^"
-          />
-          <img
-            src="https://oss.qianfox.com/files/20221124/634c18689b43a7d8.jpeg"
-            alt="  Only handsome boy or beautiful girl can see it"
-            height="100%"
-            width="16.6%"
-            title="甲醛超标！"
-          />
-          <img
-            src="https://oss.qianfox.com/files/20221124/bf9ff2d216bca17f.jpeg"
-            alt="  Only handsome boy or beautiful girl can see it"
-            height="100%"
-            width="16.6%"
-            title="cheers!"
-          />
-        </div>
-      </div>
-
-      <div class="flex-circle">
-        <a href="" class="circle"><</a>
-
-        <div class="line flex">
-          <a href="https://www.spacex.com/media/fh_performance.webm" class="line-list">|</a>
-          <a href="https://www.spacex.com/media/fh_performance.webm" class="line-list">|</a>
-          <a href="https://www.spacex.com/media/fh_performance.webm" class="line-list">|</a>
-          <a href="https://www.spacex.com/media/fh_performance.webm" class="line-list">|</a>
-          <a href="https://www.spacex.com/media/fh_performance.webm" class="line-list">|</a>
-          <a href="https://www.spacex.com/media/fh_performance.webm" class="line-list">|</a>
-        </div>
-        <a href="https://www.spacex.com/media/fh_performance.webm" class="circle">></a>
-      </div>
-    </div>
-    <!-- 黑色区域 -->
-    <div class="black">
-      <div class="container-black container">
-        <h1>友情链接:</h1>
-        <h1 class="black-link"><a>Space X</a> <a>Tesla</a> <a>NASA</a></h1>
-        <p class="b-border"></p>
-        <ul>
-          <li><a href="#home">首页 </a></li>
-          <li><a href="#about">关于 </a></li>
-          <li><a href="#information">咨讯 </a></li>
-          <li><a href="#case">案例 </a></li>
-          <li><a href="https://lafeng01.github.io/">联系 </a></li>
-        </ul>
-        <p>
-          © 2021-现在 space x.com版权所有基于space x 探索未知公司 ICP备111222
-          <img src="https://zzlz.gsxt.gov.cn/images/lz4.png " height="11px" />
-          <img
-            src="https://www.qianfox.com/templates/skin/images/ghs.png"
-            height="11px"
-          />中国公网安备110110
-        </p>
-      </div>
-    </div>
+    </footer>
   </body>
 </html>
