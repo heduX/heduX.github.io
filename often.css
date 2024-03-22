@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid green; */
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.text-center {
+  text-align: center;
+}
+.flex {
+  display: flex;
+}
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+.align-flex-end {
+  display: flex;
+  align-items: flex-end;
+}
+.flex-x-center {
+  display: flex;
+  justify-content: center;
+}
+.flex-y-center {
+  display: flex;
+  align-items: center;
+}
+.flex-space-around {
+  display: flex;
+  justify-content: space-around;
+}
+.felx-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-row-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* 边框 */
+.border-bottom {
+  border-bottom: 1px solid #ccc;
+}
+.border-right {
+  border-right: 1px solid #ccc;
+}
+/* 商标  */
+/* ® */
+.trademark::after {
+  content: "\00AE";
+}
+/* 字体颜色 */
+.ft-color-333 {
+  color: #333;
+}
+.ft-color-fff {
+  color: #fff;
+}
+.ft-color-A7B7D2 {
+  color: #a7b7d2;
+}
+.ft-color-cdd6e5 {
+  color: #cdd6e5;
+}
