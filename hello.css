@@ -3,11 +3,20 @@
   padding: 0;
   margin: auto;
 }
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 nav {
+  position: fixed;
+  width: 100%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
 }
 nav .nav-item {
-  height: 120px;
+  height: 137px;
 }
 nav .nav-item .list-2 a {
   color: #333;
@@ -54,6 +63,9 @@ nav .nav-item .nav-list {
 }
 .nav-list:hover .nav-2 {
   display: block;
+}
+.header .header-bgimg {
+  padding-top: 128px;
 }
 .header .header-pic {
   background-size: cover;
@@ -151,7 +163,7 @@ main li:hover {
   height: auto;
 }
 .footer .icon-bottom {
-  margin: 0 11px 0 0;
+  margin: 0 0 0 88px;
 }
 .footer .footer-icon {
   height: 55px;
@@ -182,6 +194,9 @@ main li:hover {
   display: block;
   padding: 0;
 }
+.footer .footer-item li a:hover {
+  color: #fff;
+}
 .footer .footer-item {
   margin: 33px 33px 55px 0;
 }
@@ -189,6 +204,9 @@ main li:hover {
   margin: 0 0 22px 0;
   font-weight: normal;
   font-size: 1.285714rem;
+}
+.footer .footer-item h2 a {
+  color: #fff;
 }
 .footer .footer-item li {
   margin: 0 0 5px 0;
@@ -275,14 +293,10 @@ main li:hover {
     display: flex;
   }
 }
-@media (max-width: 1149px) {
-  .footer .footer-link {
-    text-align: center;
-  }
-}
 @media (max-width: 750px) {
   .footer .footer-link {
     text-align: center;
+    margin-top: 33px;
   }
   .name-container {
     float: right;
@@ -292,7 +306,7 @@ main li:hover {
     clear: both;
   }
   .main-container,
-  .felx-space-between {
+  .flex-space-between {
     flex-direction: column-reverse;
   }
   .main-bgimg {
@@ -302,8 +316,8 @@ main li:hover {
     margin: 33px 0 0 0 !important;
   }
   .main-people-pic img {
-    width: 100%;
-    height: 100%;
+    width: 80% !important;
+    height: auto !important;
   }
   .flex-y-center,
   .link-container,
@@ -366,6 +380,9 @@ main li:hover {
   }
   .header-pic {
     height: 333px !important;
+  }
+  .header-bgimg {
+    padding-top: 70px !important;
   }
 }
 @media (min-width: 1920px) and (max-width: 10000px) {
