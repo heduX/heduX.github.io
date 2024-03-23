@@ -13,6 +13,9 @@ body {
   user-select: none;
   /* Non-prefixed version, currently supported by Chrome and Opera */
 }
+img {
+  user-select: none; /* 禁止拖拽图片 */
+}
 nav {
   position: fixed;
   width: 100%;
@@ -26,8 +29,8 @@ nav .nav-item .list-2 a {
   color: #333;
 }
 nav .nav-item img {
-  width: "132px";
-  height: "96px";
+  width: 187px;
+  height: auto;
 }
 nav .nav-item .nav-list {
   width: 100px;
@@ -48,6 +51,7 @@ nav .nav-item .nav-list {
 }
 .nav-2 li {
   margin: 17px 0;
+  font-size: 0.95rem;
 }
 .nav-2 a {
   line-height: 37px;
@@ -75,7 +79,7 @@ nav .nav-item .nav-list {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 520px;
+  height: 755px;
 }
 .header .header-pic .header-border {
   margin: 11px 0 0 0;
@@ -317,7 +321,9 @@ main li:hover {
     width: 95%;
   }
   .main-people-pic {
-    margin: 33px 0 0 0 !important;
+    margin: 0 !important;
+    display: flex;
+    justify-content: flex-end;
   }
   .main-people-pic img {
     width: 80% !important;
@@ -367,8 +373,8 @@ main li:hover {
     width: 30px;
   }
   .nav-phone #logo-header img {
-    height: 56px;
-    width: 77px;
+    height: auto;
+    width: 100px;
   }
   .nav-list {
     display: none;
