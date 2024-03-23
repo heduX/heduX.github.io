@@ -17,8 +17,7 @@ a {
 .flex-end {
   display: flex;
   justify-content: flex-end;
-}
-.align-flex-end {
+
   display: flex;
   align-items: flex-end;
 }
