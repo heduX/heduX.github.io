@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* border: 1px solid green; */
 }
 ul {
   list-style: none;
@@ -35,7 +34,7 @@ a {
   display: flex;
   justify-content: space-around;
 }
-.felx-space-between {
+.flex-space-between {
   display: flex;
   justify-content: space-between;
 }
