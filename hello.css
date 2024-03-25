@@ -51,6 +51,7 @@ nav .nav-item .nav-list {
 }
 .nav-2 a {
   line-height: 37px;
+  font-size:1rem;
 }
 .nav-2 li:hover {
   background-color: #15569d;
